@@ -1,6 +1,14 @@
-#include<stdio.h>
+#include<cstdio>
 
 int main(void)
+
+
+
+
+
+
+
+isprime(int j)  
 {
   for(int j=2;j<=100;j++)
     { 
