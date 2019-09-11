@@ -5,7 +5,7 @@ int sumprimes(int imin, int imax);
 
 int main(void)
 {
-  std::printf("isprime(%d)=%d\n",7,isprime(7));
+  std::printf("isprime(%d)=%d\n",57,isprime(57));
   std::printf("sumprimes(%d, %d) = %d\n",50, 100, sumprimes(50,100));
   return 0;
 }
