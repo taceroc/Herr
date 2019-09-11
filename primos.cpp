@@ -1,11 +1,16 @@
 #include<cstdio>
 
+
+int isprime(int j);
+int sumprimes(int imax,int imin);
+
+
 int main(void)
+{
+  std::printf("sumprimes(%d, %d)= %d\n", 50, 100, sumprimes(50,100));
 
-
-
-
-
+  return 0;
+}
 
 
 isprime(int j)  
@@ -19,8 +24,18 @@ isprime(int j)
 	    a++;
 	}
       if(a==2)
-	{
-	  printf("%d\n",j);
-	}
+	return 1;
      }
+  return 0;
+}
+int sumprimes(int imax, int imin)
+{
+
+  int sum =0;
+  for(int i=imin; i<=imax; i++)
+    {
+      if(isprime(i))
+	sum=i++;
+    }
+  return sum;
 }
