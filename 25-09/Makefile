@@ -1,7 +1,12 @@
+CXXFLAGS=-O2 -Wall #activar optimizacion nivel 2
+
+
+
+
 all: sumatoria.x datosuma.txt sumatoria.pdf   
 
 sumatoria.x  : sumatoria.cpp
-	g++ $< -o $@           #sumatoria.cpp -o sumatoria.x
+	g++ $(CXXFLAGS) $< -o $@           #sumatoria.cpp -o sumatoria.x
 
 datosuma.txt : sumatoria.x 
 	./sumatoria.x > datosuma.txt   #./$< >$@ #
