@@ -9,7 +9,7 @@ int main (void)
      if(sum2>sum2+i)
       break;
     }
-  // std::cout<<sum2<<"\n";
+  //std::cout<<sum2<<"\n";
 
   int sum3=sum2;
   for(int i=1; i<=10000000; i++)
