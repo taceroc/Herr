@@ -4,7 +4,7 @@
  
 int main()
 {
-  const int NSAMPLE = 10000;
+  const int NSAMPLE = 100000;
   int seed = 1;
 
   const double xmin = 0.0;
@@ -20,7 +20,10 @@ int main()
     {
       double r = d(gen);
       int idx = int (r/dx);
-      histo[idx] = histo[idx] + 1;
+      if (0 <= idx and idx < nbins)
+	{
+	  histo[idx] = histo[idx] + 1;
+	}
     }
 
   for(int i = 0; i < nbins; i++)
