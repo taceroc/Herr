@@ -28,3 +28,5 @@ int main()
       std::cout << xmin + i * dx << "  " << histo[i]/NSAMPLE/dx<< "\n";
     }
 }
+
+//no olvidar que para compilar g++ -std=c++11 name.cpp
